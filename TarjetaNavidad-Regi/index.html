@@ -16,7 +16,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
 
-<link rel="stylesheet" href="styles.css"
+<link rel="stylesheet" href="styles.css">
 
 </head> <!--HASTA AQUI VA EL HEAD-->
 
@@ -38,10 +38,10 @@
 
    <!--Mensaje pagina 1-->
    <div class="page" id="pagina1">
-    <div class="photo-circule">
+    <div class="photo-circle">
       <img class="photo-img" loading="lazy" src="gato.jpg" alt="Gato con gorro de navidad">
     </div>
-    <p class="En esta navidad este llena de paz y amor en tu hogar">  🎀</p>
+    <p class="msg-text">Que esta Navidad esté llena de paz y amor en tu hogar. 🎀</p>
     <button id="btn-next-1" class="btn-secondary">
       <span class="btn-text">Siguiente</span>
     </button>
@@ -64,6 +64,48 @@
   
     <p class="gallery-caption">Cada foto guarda un recuerdo especial con amor 📸</p>
    </div>
+
+<!-- Boton para revelar un mensaje -->
+
+    <div class="page" id="pagina3">
+    <div class="float-container float">
+     <span class="heart-emoji">🎅</span>
+    </div>
+    <p class="msg-text">¡Descubre tu mensaje secreto!</p>
+    <button id="btn-reveal" class="btn-309ebc">
+      <span class="btn-text">Haz click!</span>
+    </button>
+   </div>
+
+<!--Mensaje final -->
+
+<div class="page" id="pagina4">
+    <div id="final-card" class="final-card">
+    <audio id="navidad-audio" src="navidadaudio.mp3"></audio>
+     <div class="photo-circle gold-border final-photo">
+      <img class="photo-img" loading="lazy" src="perrito.jpg" alt="Perritos navideños">
+     </div>
+     <h2 class="final-title">!Felices fiestas!</h2>
+     <p class="final-msg">Te deseo mucho amor, paz y tranquilidad!</p>
+     <button id="btn-audio-ebc" class="btn-heart">
+      <span id="ebc-audio-btn-text">💗</span>
+     </button>
+    </div>
+    <div id="confetti-container" class="confetti-container"></div>
+   </div>
+
+<!--Navegacion de la tarjeta -->
+
+ <nav class="nav-container" aria-label="Navegación de páginas">
+    <button id="btn-prev" class="btn-nav" aria-label="Anterior">
+      <i data-lucide="chevron-left" class="icon-nav"></i>
+    </button>
+    <div id="dots" class="dots-container"></div>
+    <button id="btn-next" class="btn-nav" aria-label="Siguiente">
+      <i data-lucide="chevron-right" class="icon-nav"></i>
+    </button>
+   </nav>
+  </div>
 
 <script src="script.js"></script>
 
